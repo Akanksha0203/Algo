@@ -1,0 +1,7 @@
+<aura:component controller="contactCreateController" implements="force:appHostable">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="contacts" type="Contact[]"/>
+    <aura:iteration var="contact" items="{!v.contacts}">
+        <c:ContactList contact="{!contact}"/>
+    </aura:iteration>
+</aura:component>

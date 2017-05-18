@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="contact" type="Contact"/>
+
+    <div>
+        <div onclick="{!c.gotoRecord}">
+            <force:recordView recordId="{!v.contact.Id}" type="MINI"/>
+        </div>
+  
+    </div>
+</aura:component>
